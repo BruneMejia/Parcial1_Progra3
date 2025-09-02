@@ -10,4 +10,4 @@ class Familia:
     def resumen_consumo(self):
         total_energia = sum(i.consumo_mensual() for i in self.electrodomesticos)
         total_costo = sum(i.costo_mensual(self.tarifa_energia) for i in self.electrodomesticos)
-        return f"Familia {self.nombre} - Total: {total_energia:.2f} energia de electrica, Total a pagar: ${total_costo:.2f}"
+        return f"Familia {self.nombre} - Total: {total_energia:.2f} de energia electrica, Total a pagar: ${total_costo:.2f}"
