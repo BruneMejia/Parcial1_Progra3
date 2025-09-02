@@ -1,3 +1,4 @@
+#Aca va la clase Electrodomestico
 class Electrodomestico:
     listado = []
 
@@ -6,12 +7,14 @@ class Electrodomestico:
         self.consumo_por_hora = consumo_por_hora 
         self.horas_uso_mensual = horas_uso_mensual
         Electrodomestico.listado.append(self)
+#Calculo de gasto de enrgia mensual
 
     def consumo_mensual(self):
         return self.consumo_por_hora * self.horas_uso_mensual
 
     def costo_mensual(self, precio_por_energia):
         return self.consumo_mensual() * precio_por_energia
+#Muestra el gasto de enrgia mensual
 
     def datos(self, precio_por_energia):
         return (f"{self.nombre}: {self.consumo_mensual():.2f} energia electrica, "
