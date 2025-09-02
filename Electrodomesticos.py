@@ -3,7 +3,7 @@ class Electrodomestico:
 
     def _init_(self, nombre, consumo_por_hora, horas_uso_mensual):
         self.nombre = nombre
-        self.consumo_por_hora = consumo_por_hora  # en kWh
+        self.consumo_por_hora = consumo_por_hora 
         self.horas_uso_mensual = horas_uso_mensual
         Electrodomestico.listado.append(self)
 
