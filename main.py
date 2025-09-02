@@ -1,7 +1,7 @@
 from Electrodomesticos import Electrodomestico
 from familias_sv import Familia
 
-familia1 = Familia("Ramírez", tarifa_energia=0.20)
+familia1 = Familia("Bonilla", tarifa_energia=0.20)
 #electrodomésticos
 refri = Electrodomestico("Refrigeradora", 0.15, 720)
 tv = Electrodomestico("Televisor", 0.10, 120)
@@ -14,7 +14,7 @@ familia1.agregar_electrodomestico(ac)
 familia1.agregar_electrodomestico(luces)
 
 #familia 2
-familia2 = Familia("López", tarifa_energia=0.18)
+familia2 = Familia("Mejia", tarifa_energia=0.18)
 refri2 = Electrodomestico("Refrigeradora", 0.12, 600)
 tv2 = Electrodomestico("Televisor", 0.08, 150)
 ventilador2 = Electrodomestico("Ventilador", 0.06, 200)
