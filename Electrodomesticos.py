@@ -1,7 +1,7 @@
 class Electrodomestico:
     listado = []
 
-    def _init_(self, nombre, consumo_por_hora, horas_uso_mensual):
+    def __init__(self, nombre, consumo_por_hora, horas_uso_mensual):
         self.nombre = nombre
         self.consumo_por_hora = consumo_por_hora 
         self.horas_uso_mensual = horas_uso_mensual
@@ -13,6 +13,6 @@ class Electrodomestico:
     def costo_mensual(self, precio_por_energia):
         return self.consumo_mensual() * precio_por_energia
 
-    def info(self, precio_por_energia):
+    def datos(self, precio_por_energia):
         return (f"{self.nombre}: {self.consumo_mensual():.2f} energia electrica, "
                 f"Costo: ${self.costo_mensual(precio_por_energia):.2f}")

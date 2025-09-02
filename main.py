@@ -13,6 +13,6 @@ for i in Electrodomestico.listado:
     familia1.agregar_electrodomestico(i)
 
 print(familia1.resumen_consumo())
-print("\n Detalle por electrodoméstico:")
+print("\n Electrodoméstico:")
 for i in familia1.electrodomesticos:
     print(i.datos(familia1.tarifa_energia))
