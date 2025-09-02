@@ -10,9 +10,9 @@ class Electrodomestico:
     def consumo_mensual(self):
         return self.consumo_por_hora * self.horas_uso_mensual
 
-    def costo_mensual(self, precio_por_kwh):
-        return self.consumo_mensual() * precio_por_kwh
+    def costo_mensual(self, precio_por_energia):
+        return self.consumo_mensual() * precio_por_energia
 
-    def info(self, precio_por_kwh):
-        return (f"{self.nombre}: {self.consumo_mensual():.2f} kWh, "
-                f"Costo: ${self.costo_mensual(precio_por_kwh):.2f}")
+    def info(self, precio_por_energia):
+        return (f"{self.nombre}: {self.consumo_mensual():.2f} energia electrica, "
+                f"Costo: ${self.costo_mensual(precio_por_energia):.2f}")
