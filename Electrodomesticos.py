@@ -15,4 +15,4 @@ class Electrodomestico:
 
     def datos(self, precio_por_energia):
         return (f"{self.nombre}: {self.consumo_mensual():.2f} energia electrica, "
-                f"Costo: ${self.costo_mensual(precio_por_energia):.2f}")
+                f"Total de gasto del electrodomestico: ${self.costo_mensual(precio_por_energia):.2f}")
